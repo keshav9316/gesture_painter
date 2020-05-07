@@ -5,6 +5,7 @@ let x1;
 let y1;
 let x2;
 let y2;
+let I=0;
 
 let linex=[] ; let liney=[];
 let tempPoses;
@@ -34,9 +35,10 @@ function gotPoses(poses){
         skeleton = poses[0].skeleton;
 
         if(pose){
-            for(let i=0;i<poses.length;i++){
-                linex[i]=poses[0].pose.rightWrist.x;
-                liney[i]=poses[0].pose.rightWrist.y;
+            for(I;I<poses.length;I++){
+                linex[I]=poses[0].pose.rightWrist.x;
+                liney[I]=poses[0].pose.rightWrist.y;
+                console.log(linex[I]);
             }
         }
 
